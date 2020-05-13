@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TP Displaire Trehou</string>
+
+    <string-array name="listeTypes">
+        <item></item>
+        <item>Aventure</item>
+        <item>Simulation</item>
+        <item>Horreur</item>
+        <item>Battle Royale</item>
+    </string-array>
+
+</resources>

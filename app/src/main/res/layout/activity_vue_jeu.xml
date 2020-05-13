@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VueJeu">
+
+    <androidx.appcompat.widget.Toolbar
+        app:title="Informations jeu"
+        app:titleTextColor="@android:color/white"
+        android:id="@+id/toolbar_vuejeu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbar_vuejeu"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageViewCoverJeu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@android:color/background_light" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/textViewNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageViewCoverJeu"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/textViewPlateformes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNom"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+    />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/textViewDeveloppeurs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPlateformes"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDeveloppeurs"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDate"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+
+
+</RelativeLayout>

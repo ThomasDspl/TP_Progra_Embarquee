@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjoutJeu">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            app:title="Ajouter un jeu"
+            app:titleTextColor="@android:color/white"
+            android:id="@+id/toolbar_ajoutjeu"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+                <TextView
+                    android:id="@+id/textViewInfos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="15dp"
+                    android:text="Les champs avec une * sont obligatoires"/>
+
+                <TextView
+                    android:id="@+id/textViewNom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_below="@id/textViewInfos"
+                    android:text="Nom * : " />
+
+                <EditText
+                    android:id="@+id/editTextNom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewNom"
+                    android:layout_alignStart="@+id/textViewNom"
+                    android:layout_alignLeft="@+id/textViewNom"
+                    android:layout_marginTop="9dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+                <TextView
+                    android:id="@+id/textViewType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextNom"
+                    android:layout_alignStart="@+id/textViewNom"
+                    android:layout_alignLeft="@+id/textViewNom"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:text="Type de jeu * :" />
+
+
+                <Spinner
+                    android:id="@+id/spinnerType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewType"
+                    android:layout_alignStart="@+id/textViewNom"
+                    android:layout_alignLeft="@+id/textViewNom"
+                    android:layout_marginTop="9dp"
+                    android:ems="10"
+                    android:entries="@array/listeTypes" />
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerType"
+                    android:layout_alignStart="@+id/textViewNom"
+                    android:layout_alignLeft="@+id/textViewNom"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:text="Description : " />
+
+                <EditText
+                    android:id="@+id/editTextDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewDescription"
+                    android:layout_alignStart="@+id/textViewNom"
+                    android:layout_alignLeft="@+id/textViewNom"
+                    android:layout_marginTop="9dp"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+
+
+
+</RelativeLayout>
+
